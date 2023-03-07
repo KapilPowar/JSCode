@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tip Calculator</title>
+      <link rel="stylesheet" href="./css/style.css">
+    <!-- <style>
+      *{ margin: 0; padding: 0; box-sizing: border-box;
+        }
+        main{
+          height: 100vh;
+          background-image: linear-gradient(to right top, #051937, #004d71, #008793, #00bf72, #a8eb12);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        div{
+          max-width: 500px; height: auto;
+          background-color: #00cec9;
+          padding:50px;
+          box-shadow: 1px 1px 15px 3px #2d3436;
+        }
+
+        h1{
+          margin-bottom: 10px;
+          text-shadow: 1px 2px 1px white;
+          text-transform: capitalize;
+        }
+    </style> -->
+
+  </head>
+  <body>
+    <main>
+      <h1> Tip Calculator </h1>
+      <div>
+        <label> Bill</label>
+        <input type="text" name="" id="bill_amt" placeholder="Bill Amount" pattern="[0-9]+">
+        <br>
+        <!-- <label> tip percent</label>
+        <input type="text" name="" id="tip_perc">
+        <br> -->
+        <label for="service">How was your service?</label><select name="" id="service">
+            <option disabled selected value="0">Select an option</option>
+            <option value="0.35">35&#37; &#45; Amazing</option>
+            <option value="0.25">25&#37; &#45; Good</option>
+            <option value="0.20">20&#37; &#45; Satisfactory</option>
+            <option value="0.15">15&#37; &#45; Bad</option>
+            <option value="0.10">10&#37; &#45; Disgusting</option>
+        </select>
+        <label for="numOfPeople">How many people are sharing the bill?</label>
+        <input type="text" name="" id="numOfPeople" placeholder="Number of People" pattern="[0-9]+">
+        <br>
+        <label> tip amount</label>
+        <input type="text" name="" id="tip_amt" placeholder="Tip Amount" disabled>
+        <br>
+        <label> final bill</label>
+        <input type="text" name="" id="bill" placeholder="Final Bill" disabled>
+        <br>
+          <!-- <button id="calculate-btn">Calculate</button> -->
+          <button type="button" id="calculate-btn"> calculate</button>
+          <label for="each">Rs. <span id="tip">0.00</span> </label><small id="each">each</small>
+              <!-- Rs. <span id="tip">0.00</span> <small id="each">each</small> -->
+
+      </div>
+    </main>
+      <script src="js/index1.js" type="text/javascript"></script>
+
+      <!-- <script >
+          const tipcalcy = () => {
+            let amount = document.getElementById('bill_amt').value;
+            let perc = document.getElementById('till_perc').value;
+
+            let tip =amount * (perc/100);
+            let total = Number(amount) + tip;
+
+            alert(total);
+
+            document.getElementById('tip_amt').value =tip;
+            document.getElementById('bill').value = total;
+          }
+
+      </script> -->
+
+  </body>
+</html>
