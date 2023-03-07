@@ -59,6 +59,8 @@
     margin-top: 20px;
     background: #00b894;
     align-items: center;
+    margin: 0 auto;
+    display: block;
     /* background: #00b894linear-gradient(145deg, #ffffff, #e6e6e6); */
     box-shadow:  1px 1px 5px 1px #2d3436
   }

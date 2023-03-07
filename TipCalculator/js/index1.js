@@ -35,9 +35,17 @@ function tipcalcy() {
   var amount = document.getElementById('bill_amt').value;
   //var perc = document.getElementById('tip_perc').value;
   var perc = document.getElementById("service").value;
+  const numericRegex = /^[0-9]*$/;
+
   if (amount === "" || perc == 0) {
           alert("Please enter required values!")
           return;
+      }
+    if (!numericRegex.test(amount) ||!numericRegex.test(numberOfPeople)) {
+        alert("please enter valid number");
+        document.getElementById("bill_amt").value='';
+        document.getElementById("numOfPeople").value='';
+        return;
       }
 
 
